@@ -1,0 +1,320 @@
+html{
+    background-color: darkgray;
+}
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    padding: 1%;
+    height: 5%;
+}
+.web_logo{
+    position: relative;
+    left: 2%;
+    bottom: -1px;
+}
+.brand-title{
+    color: white;
+    font-family: verdana;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    right: 5%;
+
+}
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2f2f2f;
+    padding: 10px 20px;
+    color: white;
+
+}
+/* Burger */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2f2f2f;
+    padding: 10px 20px;
+    color: white;
+}
+
+.web_logo {
+    margin-right: 10px;
+}
+
+.brand-title {
+    font-size: 24px;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2f2f2f;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.nav-active {
+    top: 60px;
+}
+
+    
+
+/* section */
+.our-service{
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    bottom: -5px;
+}
+
+/* General styling for sections */
+.section-content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center content horizontally */
+    text-align: center; /* Center align content */
+    padding: 5vw 2em; /* Adjust padding responsively */
+    color: #fffdfd;
+    text-decoration: none;
+    font-family: verdana;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    position: relative;
+    top: -60px;
+}
+
+/* Styling for project section */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between projects */
+}
+
+.project {
+    width: calc(33.33% - 20px); /* Responsive width for each project */
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift project on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.project:hover img {
+    transform: scale(1.1); /* Zoom in image on hover */
+}
+
+.project h3 {
+    font-size: 1.5em; /* Medium font size for project titles */
+    margin-top: 10px; /* Space above title */
+    color: #333; /* Dark text color */
+}
+
+.project p {
+    font-size: 1em; /* Small font size for project descriptions */
+    color: #666; /* Slightly darker text color */
+}
+
+/* Styling for services section */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between services */
+    position: relative;
+    bottom: -60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.service {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Lift service on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.service h3 {
+    font-size: 1.5em; /* Medium font size for service titles */
+    margin-bottom: 10px; /* Space below title */
+    color: #333; /* Dark text color */
+}
+
+.service p {
+    font-size: 1em; /* Small font size for service descriptions */
+    color: #666; /* Slightly darker text color */
+}
+
+/* Styling for hero section */
+.hero {
+    background-image: url('hero-background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center align background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align content */
+    padding: 20vw 2em; /* Adjust padding responsively */
+}
+
+.hero-content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 2em; /* Padding inside hero content */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1em 2em; /* Button padding */
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+ 
+   
+/* Section 1 */
+
+
+
+
+/* FOOTER */
+/* Footer Styles */
+.footer {
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: -100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-links a:hover {
+    color: #575757;
+}
+
+.footer .footer-copy {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+ 
+       
